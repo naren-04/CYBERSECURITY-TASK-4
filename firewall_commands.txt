@@ -1,0 +1,8 @@
+sudo ufw enable
+sudo ufw status
+sudo ufw deny 23
+sudo ufw allow 22
+sudo ufw status verbose
+nc -zv 127.0.0.1 23
+nc -zv 127.0.0.1 22
+sudo ufw delete deny 23
